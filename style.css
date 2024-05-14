@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+* {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff2e7;
+    cursor:cell; /* Muda o cursor ao passar sobre o botão */
+
+}
+
+body {
+    background: #82324B;
+    background: -moz-linear-gradient(top, #82324B 0%, #D74F53 50%, #dc4e2a 100%);
+    background: -webkit-linear-gradient(top, #82324B 0%, #D74F53 50%, #dc4e2a 100%);
+    background: linear-gradient(to bottom, #82324B 0%, #D74F53 50%, #dc4e2a 100%);
+
+}
+
+.cabecalho {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-around;
+ padding: 10px;
+
+}
+
+.cabecalho-imagem {
+    height: 60px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 30px
+    
+}
+
+.cabecalho-menu-item {
+    font-family: "Poetsen One", sans-serif;
+    color: #fff2e7;
+    font-weight: 450;
+    font-size: 18px;
+    -webkit-box-shadow: inset -1px 3px 8px 5px #ffffff4f, 2px 5px 16px 0px #ffffff4f, 5px 6px 30px 8px rgba(249, 255, 65, 0.111); 
+    box-shadow: inset -1px 3px 8px 5px #ffffff4f, 2px 5px 16px 0px #ffffff4f, 5px 6px 30px 8px rgba(249, 255, 65, 0.194);
+    border-radius: 10px;
+       
+}
+
+.cabecalho-menu-item:hover {
+    color: black;
+}
+
+.conteudo {
+    border-top: 4px dotted whitesmoke;
+    margin-bottom: 48px;
+}
+.explode-text {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    animation: explode-animation 0.5s ease ; /* Aplica a animação de explosão */
+    font-family: "Poetsen One", sans-serif;
+    color: #fff2e7;
+    
+}    
+.lista-bugada {
+    width: 1000px;
+    margin-left: 30px;
+}
+li {
+    margin-left: 350px;
+    text-align: left;
+}
+
+#topBtn {
+    display: none; /* Oculta o botão por padrão */
+    position: fixed; /* Fixa o botão na janela de visualização */
+    bottom: 20px; /* Define a distância do botão até o fundo */
+    right: 20px; /* Define a distância do botão até o lado direito */
+    z-index: 99; /* Define a ordem de empilhamento */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 50%; /* Arredonda as bordas para criar um botão circular */
+    cursor:zoom-in; /* Muda o cursor ao passar sobre o botão */
+    padding: 15px; /* Adiciona espaçamento interno ao botão */
+}
+
+#topBtn:hover {
+    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse sobre o botão */
+}
+
+p {
+    width: 750px;
+    text-align: left;
+    margin-left: 320px;
+}
+
+.citacao1 {
+    width: 650px;
+    margin-left: 350px;
+    padding: 15px;
+    text-align: left;
+    font-size: 15px ;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
+.container {
+    width: 1300px; /* Ajuste o tamanho do contêiner conforme necessário */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: "Poetsen One", sans-serif;
+    color: #fff2e7;
+}
+  
+.zoomable {
+    
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de zoom */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Poetsen One", sans-serif;
+    color: #fff2e7;
+    font-size: 30px;
+}
+  
+.zoomable:hover {
+    transform: scale(1.2) ; /* Ajuste o fator de escala conforme necessário para o efeito de zoom */
+}
+  
+.zoomable {
+    position: center;
+}
+
+#zoomable1 {
+    font-size: 40px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de zoom */
+}
+
+#zoomable1:hover {
+    transform: scale(2); /* Ajuste o fator de escala conforme necessário para o efeito de zoom */
+}
+  
+#zoomable1 {
+    position: center;
+}
+
+@keyframes fire-animation {
+    0% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    5% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    10% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    15% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    20% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+}
+  
+  .fire-text {
+    font-size: 3em; /* Tamanho do texto */
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    color: transparent; /* Texto transparente para exibir apenas a sombra */
+    text-align: center; /* Alinhamento central */
+    animation: fire-animation 0.5s infinite alternate; /* Aplica a animação de fogo */
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: "Poetsen One", sans-serif;
+    color: #fff2e7;
+  }
+
+@keyframes fire-animation1 {
+    0% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    5% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    10% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    15% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    20% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+}
+  
+  .fire-text1 {
+    font-size: 3em; /* Tamanho do texto */
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    color: transparent; /* Texto transparente para exibir apenas a sombra */
+    text-align: center; /* Alinhamento central */
+    margin-left: 40px;
+    animation: fire-animation 0.5s infinite alternate; /* Aplica a animação de fogo */
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: "Poetsen One", sans-serif;
+    color: #fff2e7;
+}
+
+@keyframes fire-animation2 {
+    0% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    5% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    10% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    15% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    20% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+}
+  
+  .fire-text2 {
+    font-size: 3em; /* Tamanho do texto */
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    color: transparent; /* Texto transparente para exibir apenas a sombra */
+    text-align: center; /* Alinhamento central */
+    animation: fire-animation 0.5s infinite alternate; /* Aplica a animação de fogo */
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: "Poetsen One", sans-serif;
+    color: #fff2e7;
+}
+
+@keyframes fire-animation3 {
+    0% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    5% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    10% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    15% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+    20% {
+        text-shadow: 0 0 10px #ff7ba5, 0 0 20px #ff8488, 0 0 25px #ff6c48
+    }
+}
+  
+  .fire-text3 {
+    font-size: 3em; /* Tamanho do texto */
+    color: transparent; /* Texto transparente para exibir apenas a sombra */
+    text-align: center; /* Alinhamento central */
+    font-family: "Poetsen One", sans-serif;
+    animation: fire-animation 0.5s infinite alternate; /* Aplica a animação de fogo */
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #fff2e7;
+}
+
+
+  @keyframes explode-animation {
+    0% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+    10% {
+      transform: scale(1.8);
+      opacity: 0.9;
+    }
+    20% {
+        transform: scale(2);
+        opacity: 0.8;
+    }
+    30% {
+        transform: scale(2.3);
+        opacity: 0.7;
+    }
+    40% {
+        transform: scale(3);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(3.4);
+        opacity: 0.4;
+    }
+    60% {
+        transform: scale(3.7);
+        opacity: 0.2;
+    }
+    80% {
+        transform: scale(5);
+        opacity: 0.0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 4px dotted whitesmoke;
+    text-align: center; /* Alinhamento central */
+}
+
+h2 {
+    color: #000000;
+    font-family: "Poetsen One", sans-serif;
+}
+.pontin {
+border-top: 4px dotted whitesmoke;
+padding: 3px;
+text-align: center; /* Alinhamento central */
+}
+
+.imagem1 {
+    height: 400px;
+}
+
+.imagem2 {
+    height: 200px;
+    float: right;
+}
+
+.imagem3 {
+    height: 200px;
+    float: right;
+}
+
+.link {
+    color: #7c2c04;
+    font-style: italic;
+    font-weight:bold;
+}
